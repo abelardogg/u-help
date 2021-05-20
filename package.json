@@ -1,0 +1,25 @@
+{
+  "name": "express-template",
+  "description": "nodejs express + ejs template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abelardogg/express-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abelardogg/express-template/issues"
+  },
+  "homepage": "https://github.com/abelardogg/express-template#readme",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

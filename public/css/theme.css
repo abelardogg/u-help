@@ -1,16 +1,21 @@
 *{box-sizing: border-box;}
 body{font-family: 'Work Sans', sans-serif; font-size: 16px;}
-.d-flex{display: flex; flex-direction: row;}
-.justify-center{justify-content: center;}
-.justify-space-between{justify-content: space-between;}
-.align-center{align-items: center;}
 
-h1{font-size: 32px; font-weight: bold;}
-h2{font-size: 28px; font-weight: bold;}
-h3{font-size: 24px; font-weight: bold;}
-h4{font-size: 20px; font-weight: bold;}
-h5{font-size: 18px; font-weight: bold;}
-h6{font-size: 16px; font-weight: bold;}
-
+h1, .h1{font-size: 32px; font-weight: bold; margin-bottom: .5rem;}
+h2, .h2{font-size: 28px; font-weight: bold; margin-bottom: .5rem;}
+h3, .h3{font-size: 24px; font-weight: bold; margin-bottom: .5rem;}
+h4, .h4{font-size: 20px; font-weight: bold; margin-bottom: .5rem;}
+h5, .h5{font-size: 18px; font-weight: bold; margin-bottom: .5rem;}
+h6, .h6{font-size: 16px; font-weight: bold; margin-bottom: .5rem;}
+p{margin-bottom: .5rem;}
 a{text-decoration: none; color: rgb(0, 140, 255);}
 
+#main{
+    display: flex;
+    flex-direction: row;
+}
+
+#content{
+    width: 100%;
+    padding: 15px;
+}

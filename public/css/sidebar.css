@@ -1,1 +1,25 @@
-#sidebar{width: 200px; height: calc(100vh - 65px); border-right: 1px solid red;}
+#sidebar{
+    width: 300px; 
+    height: calc(100vh - 65px); 
+    padding: 20px 0px;
+    border-right: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.side-menu-element {
+    height: 30px;
+}
+
+.side-menu-element a {
+    display: flex;
+    height: inherit;
+    padding: 0 15px;
+    align-items: center;
+    transition: background-color .4s;
+}
+
+.side-menu-element a:hover, .side-menu-element a.active {
+    background-color: rgb(0, 140, 255);
+    color: white;
+}

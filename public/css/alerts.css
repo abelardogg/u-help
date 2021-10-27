@@ -1,0 +1,10 @@
+.alert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #c8e7ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 3px 4px 8px 0px #b9b9b9;
+}
+

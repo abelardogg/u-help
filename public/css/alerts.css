@@ -2,9 +2,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #c8e7ff;
+    background: var(--calm-blue);
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 3px 4px 8px 0px #b9b9b9;
+    box-shadow: 3px 4px 8px 0px var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.alert.warning{
+    background-color: var(--warning);
 }
 

@@ -1,0 +1,14 @@
+.card{
+    box-shadow: 3px 4px 8px 0px var(--shadow);
+    margin-bottom: 2rem;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: var(--vanilla);
+
+}
+
+.card-head{
+    border-bottom: 3px dotted var(--red);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}

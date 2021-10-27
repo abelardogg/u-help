@@ -1,5 +1,6 @@
 const express = require('express');
 var router = express.Router();
+const bloodPatientsDao = require('../dao/bloodPatients');
 
 router.use(function (req, res, next) {
     // .. some logic here .. like any other middleware
@@ -15,7 +16,8 @@ router.get('/medicine', (req, res) => {
 
 router.get('/blood', (req, res) => {
     let view = 'blood';
-    let model = {};
+    const getAllBloodPatients = bloodPatientsDao().readAll();
+    let model = {patients: getAllBloodPatients};
 
     res.render(view, model);
 });

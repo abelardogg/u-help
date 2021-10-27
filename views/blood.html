@@ -17,9 +17,46 @@
                 </h1>
             </div>
             
-            <div id="intro">
-               
-                
+            <div class="alert warning">
+               <p class="h4">Importante!</p>
+                <p>
+                    Para donar sangre hay que cumplir con ciertos requerimientos basicos como:
+                </p>
+                <ul class="mb-2">
+                    <li>Ayuno minimo de 4 horas</li>
+                    <li>No haber consumiodo alcohol en las ultimas 48 horas</li>
+                    <li>No estar consumiendo medicamentos</li>
+                    <li>No haberse hecho tatuajes recientemente</li>
+                    <li>No haberse hecho perforaciones recientemente</li>
+                </ul>
+                <p>Sin embargo <b>es necesario comunicarse con el hospital o banco de sangre para estar informado sobre si usted es apto para donar sangre</b>.</p>
+            </div>
+            
+            <div id="patients-list">
+                <% patients.forEach(function(p){ %>
+                    <div class="card">
+                        <div class="d-flex justify-space-between align-center mb-1 card-head">
+                            <h4 class="mb-0"><%- p.name %></h4>
+                            <span class="d-flex align-center">
+                                Tipo de sangre: <span class="h3 mb-0 ml-1"><%- p.patientType -%></span>
+                            </span>
+                        </div>
+                        <div class="d-flex justify-space-between">
+                            <div>
+                                <p><span class="">Tipo de sangre requerido: </span><span class="h6"><%- p.requiredType -%></span></p>
+                                <p><span class="">Uniudades requeridas: </span><span class="h6"><%- p.units -%></span></p>
+                            </div>
+                            
+                            <div>
+                                <p><span class="">Contacto paciente: </span><a href="tel:<%- p.contact -%>" class="h6"><%- p.contact -%></a></p>
+                                <p><span class="">Hospital/Banco de sangre: </span><span class="h6"><%- p.hospital -%></span></p>
+                                <p><span class="">Contacto hospital: </span><a href="tel:<%- p.contact -%>" class="h6"><%- p.hospitalConatct -%></a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                  <% }); %>
             </div>
 
         </div>

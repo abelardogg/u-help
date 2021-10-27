@@ -1,0 +1,22 @@
+{
+    "patients": [
+        {
+            "name": "Jonh Doe",
+            "patientType": "+O",
+            "requiredType": "+O, +A",
+            "units": 2,
+            "contact": "6140000000",
+            "hospital": "Central",
+            "hospitalConatct": "6141111111"
+        },
+        {
+            "name": "Jen Foo",
+            "patientType": "+A",
+            "requiredType": "+A, AB",
+            "units": 1,
+            "contact": "6141112211",
+            "hospital": "Star",
+            "hospitalConatct": "6141199111"
+        }
+    ]
+}

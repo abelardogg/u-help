@@ -20,6 +20,6 @@
 }
 
 .side-menu-element a:hover, .side-menu-element a.active {
-    background-color: rgb(0, 140, 255);
+    background-color: var(--link);
     color: white;
 }
